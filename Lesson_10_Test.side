@@ -1,0 +1,56 @@
+{
+  "id": "61c88e5c-3a25-4aec-8760-09c68c507d31",
+  "version": "2.0",
+  "name": "Lesson_10_Test",
+  "url": "https://crm.geekbrains.space",
+  "tests": [{
+    "id": "49f78934-9129-462e-9254-529773823006",
+    "name": "Test",
+    "commands": [{
+      "id": "b9c17fe8-9b3c-4805-9812-4a05e7ce76aa",
+      "comment": "",
+      "command": "open",
+      "target": "/user/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb574699-d618-42d9-86b6-f4bdf6bd7c62",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1424x1044",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "047a4891-792b-4db8-835f-3cb2bc577da1",
+      "comment": "",
+      "command": "type",
+      "target": "name=_username",
+      "targets": [],
+      "value": "DDKiRl2@yandex.ru"
+    }, {
+      "id": "cbd8837e-3519-4fe7-9377-2c87fff949f0",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=prependedInput",
+      "targets": [
+        ["id=prependedInput", "id"],
+        ["name=_username", "name"],
+        ["css=#prependedInput", "css:finder"],
+        ["xpath=//input[@id='prependedInput']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "DDKiRl2@yandex.ru"
+    }]
+  }],
+  "suites": [{
+    "id": "329f32a0-37e8-489b-a22d-77efb09a3d5d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://crm.geekbrains.space/"],
+  "plugins": []
+}
